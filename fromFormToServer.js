@@ -1,6 +1,7 @@
 const fromFormToServer = personInForm => ({
     type: [
-        personInForm.isForeign ? null : 'foreign',
+        // personInForm.isForeign ? 'foreign' : null,
+        personInForm.isForeign ? null : 'foreign', 
         personInForm.isJuridical ? 'juridical' : 'physical',
     ].filter(Boolean).join('_'),
     tin: personInForm.isForeign ? null : personInForm.tin,
