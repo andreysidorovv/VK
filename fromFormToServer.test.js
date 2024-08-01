@@ -20,7 +20,7 @@ test('отечественное юридическое лицо', () => {
         tin: '0987654321',
         name: null,
         foreign_tin: null,
-        company_title: 'ООО Ромашка',
+        company_title: 'VK',
     });
 });
 
@@ -30,7 +30,7 @@ test('иностранное физическое лицо', () => {
     expect(output).toEqual({
         type: 'foreign_physical',
         tin: null,
-        name: 'Джон Доу',
+        name: 'Джон Сноу',
         foreign_tin: '1234567890',
         company_title: null,
     });
@@ -44,6 +44,6 @@ test('иностранное юридическое лицо', () => {
         tin: null,
         name: null,
         foreign_tin: '0987654321',
-        company_title: 'Global Inc',
+        company_title: 'Amazon',
     });
 });
